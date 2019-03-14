@@ -13,14 +13,24 @@ using System.Windows.Forms;
 
 namespace Recipe_Calculator
 {
-    public partial class Form1 : Form
+    public partial class RecipeCalculator : Form
     {
-        public Form1()
+        public RecipeCalculator()
         {
             InitializeComponent();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void RecipeCalculator_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Hopper_Recipe_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("For a Hopper you need pizza");
+        }
+
+        /*private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             // Click on the link below to continue learning how to build a desktop app using WinForms!
             System.Diagnostics.Process.Start("http://aka.ms/dotnet-get-started-desktop");
@@ -30,6 +40,6 @@ namespace Recipe_Calculator
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Thanks!");
-        }
+        }*/
     }
 }
